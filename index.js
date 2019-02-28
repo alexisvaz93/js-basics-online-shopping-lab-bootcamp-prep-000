@@ -51,10 +51,10 @@ function viewCart() {
     if (cart.length === 0){
       string1 = "Your shopping cart is empty";
     }
-    else{
+    else if (cart.length > 0){
       for(var i=0; i < cart.length; i++){
         if(i === 0){
-          string1 += cart[i].itemName + " at $${cart[i].itemPrice} print";
+          string1 += cart[i].itemName + " at $" + cart[i].itemPrice;
         }
         else if (i > 0 && i < cart.length - 1){
           string1 += ", " + cart[i].itemName + " at $" + cart[i].itemPrice;
@@ -72,20 +72,19 @@ function viewCart() {
 }
 
 
-var netTotal = 0;
+var totalCost = 0;
 
 
 function total() {
 
 
     for(var i=0; i < cart.length; i++){
-      netTotal +=  cart[i].itemPrice;
+      console.log(cart[i].itemPrice);
     }
 
-  console.log(netTotal);
+  console.log(totalCost);
 
-  return(netTotal);
-
+  return(totalCost);
 
 }
 
@@ -119,7 +118,7 @@ function placeOrder(credit){
     console.log("We don't have a credit card on file for you to place your order.");
   }
   else {
-    console.log("Your total cost is $" + netTotal + ", which will be charged to the card " + credit + ".")
+    console.log("Your total cost is $" + totalCost + ", which will be charged to the card " + credit + ".")
   }
 
 
