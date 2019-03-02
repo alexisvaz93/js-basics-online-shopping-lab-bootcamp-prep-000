@@ -57,7 +57,7 @@ function viewCart() {
 }
 
 
-var totalCost;
+var totalCost = 9;
 
 
 function total() {
