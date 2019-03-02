@@ -52,7 +52,7 @@ function viewCart() {
 
   string1 += ".";
 
-  return(string1);
+  console.log(string1);
 
 }
 
