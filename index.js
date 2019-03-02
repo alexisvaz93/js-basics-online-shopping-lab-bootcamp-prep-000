@@ -57,9 +57,9 @@ function viewCart() {
 }
 
 
-function total() {
+var totalCost;
 
-  var totalCost;
+function total() {
 
   for(var i=0; i < cart.length; i++){
     totalCost += cart[i].itemPrice;
