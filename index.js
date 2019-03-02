@@ -103,4 +103,5 @@ function placeOrder(credit){
 
   setCart(newCart);
   getCart();*/
+  return cart;
 }
