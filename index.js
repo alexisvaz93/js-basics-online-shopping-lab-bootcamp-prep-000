@@ -88,10 +88,7 @@ function removeFromCart(item){
 
 function placeOrder(credit){
 
-  var newCart = [];
 
-  setCart(newCart);
-  getCart();
 
   if(credit === null || credit === ''){
     console.log("We don't have a credit card on file for you to place your order.");
