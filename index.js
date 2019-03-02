@@ -107,9 +107,9 @@ function placeOrder(credit){
   }
 
 
-  cart = [];
+  var newCart = [];
 
-  setCart(cart);
+  setCart(newCart);
 
 }
 
