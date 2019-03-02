@@ -39,13 +39,13 @@ function viewCart() {
     else if (cart.length > 0){
       for(var i=0; i < cart.length; i++){
         if(i === 0){
-          string1 += cart[i].itemName + cart[i].itemPrice;
+          string1 += cart[i].itemName + " at $" + cart[i].itemPrice;
         }
         else if (i > 0 && i < cart.length - 1){
-          string1 += ", " + cart[i].itemName + cart[i].itemPrice;
+          string1 += ", " + cart[i].itemName + " at $" + cart[i].itemPrice;
         }
         else {
-          string1 += ", and " + cart[i].itemName + cart[i].itemPrice;
+          string1 += ", and " + cart[i].itemName + " at $" + cart[i].itemPrice;
         }
       }
     }
