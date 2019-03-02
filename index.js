@@ -32,7 +32,6 @@ function addToCart(item) {
 function viewCart() {
 
   var string1 = "In your cart, you have ";
-  var temp;
 
     if (cart.length < 1){
       string1 = "Your shopping cart is empty";
@@ -41,7 +40,7 @@ function viewCart() {
       for(var i=0; i < cart.length; i++){
         if(i === 0){
           temp = getCart()[i]["itemPrice"];
-          string1 += `${cart[i].itemName} at $${temp}`;
+          string1 += `${cart[i].itemName} at $${cart[i].itemPrice}`;
         }
         else if (i > 0 && i < cart.length - 1){
           string1 += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
