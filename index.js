@@ -39,7 +39,6 @@ function viewCart() {
     else if (cart.length > 0){
       for(var i=0; i < cart.length; i++){
         if(i === 0){
-          temp = getCart()[i]["itemPrice"];
           string1 += `${cart[i].itemName} at $${cart[i].itemPrice}`;
         }
         else if (i > 0 && i < cart.length - 1){
