@@ -109,4 +109,3 @@ function placeOrder(credit){
   getCart();
 
 }
-
