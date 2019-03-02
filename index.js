@@ -98,6 +98,8 @@ function placeOrder(credit){
     console.log("Your total cost is $" + totalCost + ", which will be charged to the card " + credit + ".")
   }
 
+  var newCart = [];
 
+  setCart(newCart);
   getCart();
 }
