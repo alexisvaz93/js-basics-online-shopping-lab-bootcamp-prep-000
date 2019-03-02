@@ -32,7 +32,7 @@ function addToCart(item) {
 function viewCart() {
 
   var string1 = "In your cart, you have ";
-  const temp;
+  var temp;
 
     if (cart.length < 1){
       string1 = "Your shopping cart is empty";
