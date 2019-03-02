@@ -110,6 +110,7 @@ function placeOrder(credit){
   var newCart = [];
 
   setCart(newCart);
+  getCart();
 
 }
 
