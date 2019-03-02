@@ -48,7 +48,7 @@ function viewCart() {
 
   var string1 = "In your cart, you have ";
 
-    if (cart.length === 0){
+    if (cart.length < 1){
       string1 = "Your shopping cart is empty.";
     }
     else if (cart.length > 0){
