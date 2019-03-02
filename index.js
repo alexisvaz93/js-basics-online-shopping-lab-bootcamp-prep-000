@@ -96,11 +96,11 @@ function placeOrder(credit){
   else {
     console.log("Your total cost is $" + totalCost + ", which will be charged to the card " + credit + ".")
     cart = [];
+    return cart;
   }
 
 /*  var newCart = [];
 
   setCart(newCart);
   getCart();*/
-  return cart;
 }
