@@ -124,7 +124,7 @@ function placeOrder(credit){
 
   cart = [];
 
-  return cart;
+  setCart(cart);
 
 }
 
