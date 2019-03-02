@@ -59,7 +59,7 @@ function viewCart() {
 
 function total() {
 
-  var totalCost = 0;
+  var totalCost;
 
   for(var i=0; i < cart.length; i++){
     console.log(cart[i].itemPrice);
