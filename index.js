@@ -93,7 +93,6 @@ function removeFromCart(item){
 
 function placeOrder(credit){
 
-
   if(credit === null || credit === ''){
     console.log("We don't have a credit card on file for you to place your order.");
   }
@@ -104,7 +103,6 @@ function placeOrder(credit){
     console.log("Your total cost is $" + totalCost + ", which will be charged to the card " + credit + ".")
   }
 
-
   var newCart = [];
 
   setCart(newCart);
@@ -112,27 +110,3 @@ function placeOrder(credit){
 
 }
 
-
-
-
-
-
-
-
-/*var cart;
-
-function setCart(newCart) {
-  cart = newCart;
-}
-
-function total() {
-  let t = 0
-
-  for (var i = 0, l = cart.length; i < l; i++) {
-    for (var item in cart[i]) {
-      t += cart[i][item]
-    }
-  }
-
-  return t
-}*/
