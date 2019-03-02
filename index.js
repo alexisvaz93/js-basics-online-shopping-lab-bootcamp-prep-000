@@ -42,10 +42,10 @@ function viewCart() {
           string1 += cart[i].itemName + " at $" + cart[i].price;
         }
         else if (i > 0 && i < cart.length - 1){
-          string1 += ", " + cart[i].itemName + " at $" + cart[i].itemPrice;
+          string1 += ", " + cart[i].itemName + " at $" + cart[i].price;
         }
         else {
-          string1 += ", and " + cart[i].itemName + " at $" + cart[i].itemPrice;
+          string1 += ", and " + cart[i].itemName + " at $" + cart[i].price;
         }
       }
     }
