@@ -62,15 +62,13 @@ var totalCost = 0;
 
 function total() {
 
-
-    for(var i=0; i < cart.length; i++){
-      console.log(cart[i].itemPrice);
-    }
+  for(var i=0; i < cart.length; i++){
+    console.log(cart[i].itemPrice);
+  }
 
   console.log(totalCost);
 
   return(totalCost);
-
 }
 
 
